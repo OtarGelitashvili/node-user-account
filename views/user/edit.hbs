@@ -1,0 +1,43 @@
+<h1>{{Title}}</h1>
+
+<form action="/user" method="POST">
+    <input type="hidden" name="_id" value="{{user._id}}">
+    <div class="form-group">
+    
+        <input type="text" class="form-control" name="fullName" placeholder="Full Name" value="{{user.fullName}}">
+        
+    </div>
+    <div class="form-group">
+      
+        <input type="text" class="form-control" name="email" placeholder="Email" value="{{user.email}}">
+        
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+       
+            <input type="password" class="form-control" name="password" placeholder="Password" value="{{user.password}}" >
+        </div>
+        <div class="form-group col-md-6">
+            
+            <input type="number" class="form-control" name="age" placeholder="Age" value="{{user.age}}">
+        </div>
+    </div>
+ <div class="form-group">
+        
+        <button type="submit" class="btn btn-info"><i class="fa fa-plus" arial-hidden="true"></i> Submit</button>
+        <a class="btn btn-secondary" href="/user/list"><i class="fa fa-list-alt"></i> View All</a>
+          
+    </div>
+</form>
+ <form class="fileupload" action="upload" method="post" enctype="multipart/form-data">
+     <h3>upload file to folder</h3>
+      <input type="file"  name="upfile" value="">
+      <input type="submit" />
+</form>
+
+
+
+
+
+   
+ 
